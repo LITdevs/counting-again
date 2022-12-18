@@ -2,5 +2,9 @@
   "name": "counting",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
 }
