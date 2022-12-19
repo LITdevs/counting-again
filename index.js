@@ -20,7 +20,7 @@ client.once("ready", c => {
 });
 
 client.on("messageCreate", async message => {
-	if (message.author.bot) return; // Ignore bots
+	if (message.author.bot || !message.content) return; // Ignore bots and empty messages
 	// Bind counting channel, init server data
 	if (message.content === "bind counting to this channel" && message.member.permissions.has("ADMINISTRATOR")) {
 		if (!servers[message.guild.id]) servers[message.guild.id] = {
